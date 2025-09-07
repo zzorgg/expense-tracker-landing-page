@@ -3,7 +3,6 @@ import { Card } from '@/components/ui/card'
 import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
 import * as React from 'react'
-import { Gemini, Replit, MagicUI, VSCodium, MediaWiki, GooglePaLM } from '@/components/logos'
 
 export default function IntegrationsSection() {
     return (
@@ -11,45 +10,46 @@ export default function IntegrationsSection() {
             <div className="py-32">
                 <div className="mx-auto max-w-5xl px-6">
                     <div className="text-center">
-                        <h2 className="text-balance text-3xl font-semibold md:text-4xl">Integrate with your favorite tools</h2>
-                        <p className="text-muted-foreground mt-6">Connect seamlessly with popular platforms and services to enhance your workflow.</p>
+                        <h2 className="text-balance text-3xl font-semibold md:text-4xl">Integrated with your favorites</h2>
+                        <p className="text-muted-foreground mt-6">Connected seamlessly with popular platforms and technologies to enhance your workflow.</p>
                     </div>
 
                     <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                         <IntegrationCard
-                            title="Google Gemini"
+                            title="Spring Boot"
                             description="Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.">
-                            <Gemini />
+                            <img src="/spring-boot.svg" alt="spring-boot"/>
                         </IntegrationCard>
 
                         <IntegrationCard
-                            title="Replit"
+                            title="Java"
                             description="Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.">
-                            <Replit />
+                            <img src="/java.png" alt="java" />
                         </IntegrationCard>
 
                         <IntegrationCard
-                            title="Magic UI"
+                            title="React"
                             description="Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.">
-                            <MagicUI />
+                            <img src="/react.png" alt="react" />
                         </IntegrationCard>
 
                         <IntegrationCard
-                            title="VSCodium"
+                            title="PostgreSQL"
                             description="Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.">
-                            <VSCodium />
+                            <img src="/postgresql.png" alt="postgresql" />
                         </IntegrationCard>
 
                         <IntegrationCard
-                            title="MediaWiki"
+                            title="AWS"
                             description="Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.">
-                            <MediaWiki />
+                            <img src="/aws.png" alt="aws" className="block dark:hidden" />
+                            <img src="/aws-dark.png" alt="aws dark" className="hidden dark:block" />
                         </IntegrationCard>
 
                         <IntegrationCard
                             title="Google PaLM"
                             description="Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.">
-                            <GooglePaLM />
+                            <img src="typescript.png" alt="typescript" />
                         </IntegrationCard>
                     </div>
                 </div>
