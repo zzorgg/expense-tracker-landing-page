@@ -39,7 +39,7 @@ export const HeroHeader = () => {
                                 href="/"
                                 aria-label="home"
                                 className="flex items-center space-x-2">
-                                <img src="/real.png" alt="" className='h-8 w-auto'/>
+                                <img src="/logo.png" alt="" className='h-8 w-auto'/>
                             </Link>
 
                             <button
@@ -56,7 +56,7 @@ export const HeroHeader = () => {
                                         <li key={index}>
                                             <Link
                                                 href={item.href}
-                                                className="text-muted-foreground hover:text-accent-foreground block duration-150">
+                                                className="text-black dark:text-neutral-50 hover:text-primary dark:hover:text-blue-500 block duration-150">
                                                 <span className="font-medium">{item.name}</span>
                                             </Link>
                                         </li>
@@ -90,9 +90,10 @@ export const HeroHeader = () => {
                                 </Button>
                                 <Button
                                     asChild
-                                    size="sm">
-                                    <Link href="#">
-                                        <span>Sign Up</span>
+                                    size="sm"
+                                    >
+                                    <Link href="/signup">
+                                        <span className='text-neutral-50'>Sign Up</span>
                                     </Link>
                                 </Button>
                                 <ModeToggle />

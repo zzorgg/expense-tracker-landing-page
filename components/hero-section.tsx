@@ -37,13 +37,22 @@ export default function HeroSection() {
                         <div className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"></div>
                         <div className="mx-auto max-w-5xl px-6">
                             <div className="sm:mx-auto lg:mr-auto lg:mt-0">
-                                <TextEffect
-                                    preset="fade-in-blur"
-                                    speedSegment={0.3}
-                                    as="h1"
-                                    className="mt-8 max-w-2xl text-5xl font-medium md:text-6xl lg:mt-16">
-                                     Track, Take Control.
-                                </TextEffect>
+                                <h1 className="mt-8 max-w-2xl text-5xl font-medium md:text-6xl lg:mt-16">
+                                    <TextEffect
+                                        preset="fade-in-blur"
+                                        speedSegment={0.3}
+                                        as="span"
+                                        className="dark:text-primary">
+                                        T
+                                    </TextEffect>
+                                    <TextEffect
+                                        preset="fade-in-blur"
+                                        speedSegment={0.3}
+                                        as="span"
+                                        className="">
+                                        rack, Take Control.
+                                    </TextEffect>
+                                </h1>
                                 <TextEffect
                                     per="line"
                                     preset="fade-in-blur"
@@ -73,7 +82,7 @@ export default function HeroSection() {
                                         <span className="text-foreground text-md font-normal">Start Tracking Your Expenses Today</span>
                                         <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
-                                        <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
+                                        <div className="bg-primary text-neutral-50 dark:text-neutral-900 size-6 overflow-hidden rounded-full duration-500">
                                             <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
                                                 <span className="flex size-6">
                                                     <ArrowRight className="m-auto size-3" />
